@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 var program = require('commander')
 var surfgen = require('./surface-generator.js')
+var package = require('./package.json')
 
 program
-    .version('0.2')
+    .version(package.version)
     
     .description(
        'Calculate ESP surfaces from the ESP_DNN method.\n' +
