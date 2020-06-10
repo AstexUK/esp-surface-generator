@@ -1,0 +1,21 @@
+{
+  "name": "esp-surface-generator",
+  "version": "0.2.0",
+  "description": "Generate esp surface data",
+  "main": "surface-generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fred Ludlow",
+  "license": "Apache-2.0",
+  "bin": {
+    "esp-surface-generator": "./cli.js"
+  },
+  "devDependencies": {
+    "npm-run": "^5.0.1"
+  },
+  "dependencies": {
+    "browser-env": "^3.2.5",
+    "commander": "^5.1.0"
+  }
+}
