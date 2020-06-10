@@ -12,6 +12,8 @@ Given a molecule, it will calculate the Connolly surface and export it in a simp
 
 This is a javascript (node) package, and requires [nodejs](https://nodejs.org/en/) 10.0 or greater.
 
+So far it has only been tested on Linux. It should be possible to run on Windows or MacOS with minimal changes.
+
 
 ### Installing globally in npm
 
@@ -95,5 +97,11 @@ The tmesh output format describes a triangle mesh and contains:
     2
     1
     ```
-  
 
+## Acknowledgements
+
+This package uses multiple parts of [NGL](https://github.com/arose/ngl) for parsing input and generating the surface.
+
+## Support
+
+Please open an issue or email "pli-at-astx-dot-com"
