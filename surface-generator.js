@@ -12,7 +12,7 @@
 const _ = require('browser-env')()
 
 var fs = require('fs').promises
-var NGL = require('../ngl-tmesh/build/js/ngl.dev.js')
+var NGL = require('./ngl.dev.js')
 
 var SURF_PARAMS = {
   type: 'av',

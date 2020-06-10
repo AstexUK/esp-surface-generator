@@ -71137,8 +71137,9 @@
        *
        *
        * Leave as 1.0 to keep units of e⁻ and Å
+       *
        */
-      espScale: 1 /* / (4 * Math.PI)  */ // 332.0 
+      espScale: 332.00
   };
   /**
    * Creates a function that will provide a PerPositionCallback
@@ -71155,16 +71156,13 @@
           // Accumulate ESP contributions in p
           var ap = structure.getAtomProxy();
           var p = 0.0;
-          var i = 0;
           hash.eachWithin(x, y, z, maxRadius, function (atomIndex, dSq) {
               ap.index = atomIndex;
               var charge = ap.partialCharge;
               if (charge === null || charge === 0.0)
                   { return; }
               p += (charge / dSq);
-              i++;
           });
-          console.log("Considered contributions from ", i, " atoms");
           return p * espScale;
       };
   }
